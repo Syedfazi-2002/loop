@@ -1,13 +1,123 @@
-body {
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+body{
+  background-color: black;
+  width: 100%;
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-box-shadow: -1px 5px 9px -3px rgba(0,0,0,0.56);
+  -moz-box-shadow: -1px 5px 9px -3px rgba(0,0,0,0.56);
+  box-shadow: -1px 5px 9px -3px rgba(0,0,0,0.56);
+}
+.navbar-collapse{
+  flex-grow: 0;
+  margin-right: 100px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 1% 4%;
+}
+.navbar-nav li a{
+  color: #fff;
+  margin-left: 40px;
+}
+.btn{
+  border-color: transparent;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Groomer component */
+
+.groomer-main-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.groomer-small-container{
+  width: 433px;
+  border: 1px solid pink;
+  padding: 20px;
+  height: 250px;
+  padding-top: 20px;
+  margin-top: 120px;
+}
+
+
+
+
+
+
+.first-comp{
+  padding-top: 150px;
+}
+.data{
+  color: white;
+    width: 569px;
+    border: 1px solid red;
+}
+.parent-container{
+  display: flex !important;
+    justify-content: center;
+    gap: 110px;
+    padding-top: 46px;
+}
+.works-main-container{
+  display: flex !important;
+    justify-content: center;
+    gap: 16px;
+}
+.works-left-container{
+  width: 617px;
+  padding-right: 36px;
+  border: 1px solid yellow;
+  height: 255px;
+  padding: 18px;
+  padding-top: 20px;
+  margin-top: 122px;
+}
+.para-data{
+  color: #fff;
+  display: inline;
+}
+.arrow-icon{
+  font-size: 40px;
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  top: 10px;
+}
+.star-main-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.star-data-container{
+  border: 1px solid brown;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 122px;
+    width: 600px;
+    height: 200px;
+}
+.agency-main-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.agency-small-container{
+ width: 600px;
+    border: 1px solid yellow;
+    height: 200px;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 122px;
 }
